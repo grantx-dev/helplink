@@ -2,9 +2,19 @@
   "name": "@helplink/db",
   "version": "1.0.0",
   "main": "db.ts",
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
   "private": true,
   "dependencies": {
+    "dotenv": "^16.4.5",
     "drizzle-orm": "latest",
     "postgres": "latest"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.24.0"
   }
 }
