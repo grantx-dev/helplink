@@ -2,8 +2,15 @@
   "name": "helplink",
   "version": "1.0.0",
   "private": true,
-  "workspaces": ["apps/*"],
+  "workspaces": [
+    "apps/*",
+    "internal/*"
+  ],
+  "dependencies": {
+    "@helplink/db": "workspace:^"
+  },
   "devDependencies": {
+    "@types/node": "^22.7.4",
     "turbo": "^1.4.0"
   },
   "scripts": {

@@ -1,0 +1,10 @@
+{
+  "name": "@helplink/db",
+  "version": "1.0.0",
+  "main": "db.ts",
+  "private": true,
+  "dependencies": {
+    "drizzle-orm": "latest",
+    "postgres": "latest"
+  }
+}
